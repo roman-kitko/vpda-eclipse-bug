@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.vpda</groupId>
+		<artifactId>vpda-common-abstractClient</artifactId>
+		<version>2.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>vpda-common-abstractClientViewProviderUI</artifactId>
+	<packaging>jar</packaging>
+	<name>vpda-common-abstractClientViewProviderUI</name>
+
+	<description>
+	  Abstract client view provider module provide  abstraction for both client and server view of view provider UI. This means abstract client view provider UI for concreete platforms
+	  and also basic commands using which server controls client flow.
+  </description>
+
+
+	<dependencies>
+
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>vpda-common-abstractClientCore</artifactId>
+			<version>${project.version}</version>
+			<type>jar</type>
+		</dependency>
+
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>vpda-common-clientServerViewProvider</artifactId>
+			<version>${project.version}</version>
+			<type>jar</type>
+		</dependency>
+
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>vpda-common-abstractClientData</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+	</dependencies>
+
+</project>

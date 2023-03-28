@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<body bgcolor="white">
+
+Provides contract for executing commands in client server environment.
+Typically in gui environment, before each call to server, we need to execute some comamnd that e.g disable
+some gui, than we execute concrete server functions (method call, command execution) and after success we need
+to present data. 
+ 
+<p>
+There is one main class that encapsulates server execution from client side.
+{@link org.vpda.common.core.command.request.AbstractRequestCommand} is abstract command we can use to execute request on server side
+When creating new requeest, we can override this methods
+<ul>
+	<li>AbstractRequestCommand.executeRequest that will be executed on server side</li>
+	<li>AbstractRequestCommand.executeBeforeRequest which can e.g disable client gui</li>
+	<li>AbstractRequestCommand.executeAfterRequest which should present results</li>
+	<li>AbstractRequestCommand.executeExceptionHandling which can handle exceptions</li>
+	 
+</ul>
+
+</body>
+</html>

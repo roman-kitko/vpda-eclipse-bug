@@ -1,0 +1,4 @@
+<container>
+	<component-implementation class-name-key="org.vpda.common.entrypoint.ModulesConfigurationFactory" 
+							  class="org.vpda.common.entrypoint.TestModulesConfigurationFactory"/>
+</container>

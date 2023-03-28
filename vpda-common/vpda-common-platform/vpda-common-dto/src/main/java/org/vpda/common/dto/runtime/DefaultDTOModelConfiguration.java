@@ -1,0 +1,65 @@
+/**
+ * View provider driven applications - java application framework for developing RIA
+ * Copyright (C) 2009-2022 Roman Kitko, Slovakia
+ *
+ * Licensed under the GNU GENERAL PUBLIC LICENSE, Version 3.0 (the "License").
+ * You may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at http://www.gnu.org/licenses/gpl.html
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.vpda.common.dto.runtime;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
+import java.util.function.Predicate;
+
+import org.vpda.common.dto.annotations.DTOModelSkipped;
+/**
+ * 
+ * Default {@link DTOModelConfiguration} model configuration.
+ *
+ */
+public final class DefaultDTOModelConfiguration implements DTOModelConfiguration {
+
+    private DefaultDTOModelConfiguration() {
+    }
+
+    private static final DefaultDTOModelConfiguration INSTANCE = new DefaultDTOModelConfiguration();
+
+    public static DTOModelConfiguration getInstance() {
+        return INSTANCE;
+    }
+
+    @Override
+    public Predicate<Field> getFieldFilter() {
+        return (f) -> {
+            if ("$jacocoData".equals(f.getName())) {
+                return false;
+            }
+            if (f.isAnnotationPresent(DTOModelSkipped.class)) {
+                return false;
+            }
+            if (Modifier.isStatic(f.getModifiers())) {
+                return false;
+            }
+            return true;
+        };
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (obj instanceof DefaultDTOModelConfiguration) {
+            return true;
+        }
+        return false;
+    }
+
+}

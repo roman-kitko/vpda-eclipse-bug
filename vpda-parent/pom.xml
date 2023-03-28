@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.vpda</groupId>
+	<artifactId>vpda</artifactId>
+	<packaging>pom</packaging>
+	<version>2.1-SNAPSHOT</version>
+	<name>View providers driven applications : ${project.version}</name>
+	
+
+	<modules>
+		<module>./pom-vpda-parent.xml</module>
+		<module>./pom-java-parent.xml</module>
+		<module>./pom-tests-parent.xml</module>
+		<module>../vpda-assemblies</module>
+		<module>../vpda-common</module>
+	</modules>
+</project>

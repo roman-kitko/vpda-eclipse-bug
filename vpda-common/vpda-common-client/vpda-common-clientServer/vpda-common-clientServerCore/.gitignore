@@ -1,0 +1,13 @@
+target
+eclipse-target
+.project
+.classpath
+.metadata
+.recommenders
+.settings
+
+RemoteSystemsTempFiles
+*.log
+out
+out.*
+bin

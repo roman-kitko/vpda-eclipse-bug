@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<!-- Move to vpda-common-client -->
+	
+	<parent>
+		<groupId>org.vpda</groupId>
+		<artifactId>vpda-common-client</artifactId>
+		<version>2.1-SNAPSHOT</version>
+	</parent>	
+	
+	<artifactId>vpda-common-abstractClient</artifactId>
+	<packaging>pom</packaging>
+	<name>vpda-common-abstractClient</name>
+	
+	<description>
+		Abstract client modules provide client abstraction for both client and server view. This means basic client UI and also view provider UI. This way we have some abstraction for client platforms
+		and also server can create new commands which can control client ui flow.
+	</description>
+	
+	<dependencies>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>vpda-common-util</artifactId>
+			<version>${project.version}</version>
+			<type>jar</type>
+		</dependency>
+		
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>vpda-common-core</artifactId>
+			<version>${project.version}</version>
+			<type>jar</type>
+		</dependency>
+		
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>vpda-common-clientServerCore</artifactId>
+			<version>${project.version}</version>
+			<type>jar</type>
+		</dependency>
+		
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>vpda-common-client-communication</artifactId>
+			<version>${project.version}</version>
+			<type>jar</type>
+		</dependency>
+		
+		
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>vpda-common-comps</artifactId>
+			<version>${project.version}</version>
+			<type>jar</type>
+		</dependency>
+		
+		
+	</dependencies>
+	
+	
+	<modules>
+		<module>./pom-tests.xml</module>
+		<module>vpda-common-abstractClientCore</module>
+		<module>vpda-common-abstractClientCore-tests</module>
+		<module>vpda-common-abstractClientData</module>
+		<module>vpda-common-abstractClientViewProviderUI</module>
+		<module>vpda-common-abstractClientViewProviderUI-tests</module>
+	</modules>
+</project>

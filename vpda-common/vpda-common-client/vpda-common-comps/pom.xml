@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+	<groupId>org.vpda</groupId>
+	<artifactId>vpda-common-client</artifactId>
+	<version>2.1-SNAPSHOT</version>
+  </parent>	
+  
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>vpda-common-comps</artifactId>
+  <packaging>jar</packaging>
+  <name>vpda-common-comps</name>
+  
+  <description>
+    Provides component abstraction layer
+  </description>
+  
+  
+  <dependencies>
+	  
+	 <dependency>
+		  <groupId>${project.groupId}</groupId>
+		  <artifactId>vpda-common-util</artifactId>
+		  <version>${project.version}</version>
+		  <type>jar</type>
+	 </dependency>
+	 
+	 <dependency>
+		  <groupId>${project.groupId}</groupId>
+		  <artifactId>vpda-common-core</artifactId>
+		  <version>${project.version}</version>
+		  <type>jar</type>
+	 </dependency>
+	
+  </dependencies>
+  
+  
+  
+</project>

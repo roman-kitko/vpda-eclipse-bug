@@ -1,0 +1,12 @@
+<container>
+
+	<component-instance key="Module1-submodules" factory="org.vpda.common.ioc.picocontainer.ListXMLComponentInstanceFactory">
+		<list itemFactory="org.vpda.common.ioc.picocontainer.ClassXMLComponentInstanceFactory">
+			<item classname="org.vpda.common.entrypoint.AbstractModuleEntryPointTest$SubModuleEntryPoint1"/>
+			<item classname="org.vpda.common.entrypoint.AbstractModuleEntryPointTest$SubModuleEntryPoint2"/>
+		</list>
+	</component-instance>
+
+
+
+</container>

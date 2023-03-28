@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<body bgcolor="white">
+
+Provides main entry point contract to application and its modules.
+VPDA providers modular structure with one application entry point and module entry point for each module.
+ 
+ 
+<p>
+These are main interfaces in this package
+<ul>
+	<li>{@link org.vpda.common.core.entrypoint.AppEntryPoint} is entry point to application. There will exists only one 
+		application entry point. Classes implementing this interface must initialize application
+		and call entry point method of each module
+	</li>
+	<li>{@link org.vpda.common.core.entrypoint.ModuleEntryPoint} is entry point to module. Its purpose is to initialize module</li>
+	<li>{@link org.vpda.common.core.entrypoint.AppConfiguration} is holder of application configuration</li>
+	<li>{@link org.vpda.common.core.entrypoint.ModuleConfiguration} is holder of module configuration</li>
+</ul>
+
+
+</body>
+</html>

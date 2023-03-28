@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<body bgcolor="white">
+
+Provides impl of command executors.  
+ 
+<p>
+These are main executors 
+<ul>
+	<li>{@link org.vpda.common.core.command.executor.impl.CommandExecutorBase} is basic executor which just executes command in current thread</li>
+	<li>{@link org.vpda.common.core.command.executor.impl.CommandExecutorDelegate} delegates execution to another executor</li>
+	<li>{@link org.vpda.common.core.command.executor.impl.CommandExecutorThreadPool} executes commands in new thread using thread pool</li>
+	<li>{@link org.vpda.common.core.command.executor.impl.CommandExecutorVisitor} visits each command with passed visitor before each execution</li>
+	
+</ul>
+
+</body>
+</html>

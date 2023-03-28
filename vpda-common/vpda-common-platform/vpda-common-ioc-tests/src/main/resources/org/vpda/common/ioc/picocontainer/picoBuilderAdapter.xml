@@ -1,0 +1,11 @@
+<container>
+	<component-adapter-factory key="picoBuilderFactory" class="org.vpda.common.ioc.picocontainer.PicoBuilderComponentAdapterFactory"/>
+	<component-adapter factory="picoBuilderFactory" class="org.vpda.common.ioc.picocontainer.MyClass">
+		<parameter>
+			<org.vpda.common.ioc.picocontainer.Builder>
+				<name>Hello world</name>
+				<val>666</val>
+			</org.vpda.common.ioc.picocontainer.Builder>
+		</parameter>
+	</component-adapter>
+</container>

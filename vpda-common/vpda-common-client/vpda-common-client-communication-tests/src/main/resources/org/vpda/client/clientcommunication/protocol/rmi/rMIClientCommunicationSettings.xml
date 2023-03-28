@@ -1,0 +1,7 @@
+<container>
+	<component-adapter key="settings1" class="org.vpda.client.clientcommunication.protocol.rmi.RMIClientCommunicationSettings">
+		<parameter><string>myHost</string></parameter>
+		<parameter><int>888</int></parameter>
+		<parameter><string>myBindingName</string></parameter>
+	</component-adapter>
+</container>

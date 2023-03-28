@@ -1,0 +1,16 @@
+<container>
+	<component-implementation key="myCommunicationId" class="org.vpda.clientserver.communication.CommunicationId">
+		<parameter factory="org.vpda.common.ioc.picocontainer.EnumXMLComponentInstanceFactory">
+			<enum enumClass="org.vpda.clientserver.communication.BasicCommunicationProtocol" enumName="EMBEDDED"/>
+		</parameter>		
+		<parameter factory="org.vpda.common.ioc.picocontainer.EnumXMLComponentInstanceFactory">
+			<enum enumClass="org.vpda.clientserver.communication.BasicCommunicationKind" enumName="CLIENT_SERVER_COMMUNICATION"/>
+		</parameter>>	
+		<parameter><string>default</string></parameter>
+	</component-implementation>
+	<component-instance key="myCommunicationIds" factory="org.vpda.common.ioc.picocontainer.ListXMLComponentInstanceFactory">
+		<list>
+			<item ref="myCommunicationId"/>
+		</list>
+	</component-instance>
+</container>

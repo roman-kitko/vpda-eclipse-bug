@@ -1,0 +1,15 @@
+target
+eclipse-target
+.project
+.classpath
+.metadata
+.recommenders
+.settings
+
+RemoteSystemsTempFiles
+*.log
+*.log*
+out
+out.*
+.idea
+*.iml

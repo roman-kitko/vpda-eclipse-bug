@@ -1,0 +1,8 @@
+pom.version=${project.version}
+pom.productName=${vpda.productName}
+productName=vpda-common
+majorVersion=0
+minorVersion=4-SNAPSHOT
+fixPackVersion=
+buildNumber=
+creationDate=

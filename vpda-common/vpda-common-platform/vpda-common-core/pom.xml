@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<groupId>org.vpda</groupId>
+		<artifactId>vpda-common-platform</artifactId>
+		<version>2.1-SNAPSHOT</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>vpda-common-core</artifactId>
+	<packaging>jar</packaging>
+	<name>vpda-common-core</name>
+
+	<description>
+		Common core module provides module managament,common basic services like
+		localization,resources. Also basic user session interfaces and basic
+		communication interfaces are provided here.
+		PicoContainer is used as IOC container, but there is dependency to picocontainer
+		only in module entry of each module. Constructor dependency is used
+		preferable throgh project, which means once you
+		construct object using its constructor, u can use it. This does not depends
+		whether you use component in context of container or programatically
+		(e.g in tests)
+	</description>
+
+
+	<dependencies>
+
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>vpda-common-util</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>vpda-common-types</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>vpda-common-dto</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>vpda-common-ioc</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>vpda-common-service</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>vpda-common-entrypoint</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>vpda-common-processor</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>vpda-common-command</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>vpda-common-context</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+	</dependencies>
+
+
+</project>

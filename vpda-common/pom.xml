@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.vpda</groupId>
+		<artifactId>vpda-java-parent</artifactId>
+		<version>2.1-SNAPSHOT</version>
+		<relativePath>../vpda-parent/pom-java-parent.xml</relativePath>
+	</parent>
+
+	<artifactId>vpda-common</artifactId>
+	<packaging>pom</packaging>
+	<name>vpda-common</name>
+
+	<description>VPDA Common are projects used on client and server side both. They define common utilities and common framework infrastructure. This includes modules management,
+		     clien-server interfaces and client abstraction.
+	</description>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+				<configuration>
+					<aggregate>false</aggregate>
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
+
+
+	<modules>
+		<module>pom-tests.xml</module>
+		<module>vpda-common-platform</module>
+		<module>vpda-common-runtime</module>
+		<module>vpda-common-client</module>
+	</modules>
+
+</project>

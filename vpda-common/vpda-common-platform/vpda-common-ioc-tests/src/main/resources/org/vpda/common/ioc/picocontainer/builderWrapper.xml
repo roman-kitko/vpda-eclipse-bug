@@ -1,0 +1,18 @@
+<container>
+	<component-instance key="key1" factory="org.vpda.common.ioc.picocontainer.BuilderInstanceFactory">
+		<builder builderClassName="org.vpda.common.ioc.picocontainer.BuilderWrapperInstanceFactoryTest$MyClass$Builder">	
+			<ss>Hello world</ss>
+			<ii>777</ii>
+		</builder>
+	</component-instance>
+	
+	<component-adapter-factory key="picoBuilderFactory" class="org.vpda.common.ioc.picocontainer.PicoBuilderComponentAdapterFactory"/>
+	<component-adapter factory="picoBuilderFactory" key="key2" class="org.vpda.common.ioc.picocontainer.BuilderWrapperInstanceFactoryTest$MyClass">
+		<parameter factory="org.vpda.common.ioc.picocontainer.BuilderFactory">
+			<builder builderClassName="org.vpda.common.ioc.picocontainer.BuilderWrapperInstanceFactoryTest$MyClass$Builder">
+				<ss>I like this IDE</ss>
+				<ii>222</ii>
+			</builder>
+		</parameter>
+	</component-adapter>
+</container>

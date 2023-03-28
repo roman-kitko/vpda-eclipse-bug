@@ -1,0 +1,97 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.vpda</groupId>
+	<artifactId>vpda-parent</artifactId>
+	<packaging>pom</packaging>
+	<version>2.1-SNAPSHOT</version>
+
+	<developers>
+		<developer>
+			<id>kitko</id>
+			<name>Roman Kitko</name>
+			<email>roman.kitko@vpda.org</email>
+			<organization>View providers driven applications org</organization>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>1</timezone>
+		</developer>
+	</developers>
+
+	<url>${vpda.url}</url>
+
+	<licenses>
+		<license>
+			<name>LGPL</name>
+			<url>licenses/gpl-3.0.txt</url>
+			<distribution>manual</distribution>
+		</license>
+	</licenses>
+
+	<organization>
+		<name>View providers driven applications</name>
+		<url>http://vpda.org</url>
+	</organization>
+
+	<description>
+		VPDA - View Providers Driven Application is java based application framework for effective building robust applications. Its main idea is to compose applications from view providers - server object rendered at client site. Client can be swing application or web
+  	</description>
+
+	<distributionManagement>
+		<repository>
+			<id>vpda-repo</id>
+			<url>${vpda.deployUrlRepo}</url>
+		</repository>
+		<site>
+			<id>vpda-site</id>
+			<url>${vpda.deployUrlSite}</url>
+		</site>
+	</distributionManagement>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<vpda.productName>vpda</vpda.productName>
+		<vpda.groupId>${project.groupId}</vpda.groupId>
+		<vpda.artifactId>${project.artifactId}</vpda.artifactId>
+		<vpda.version>${project.version}</vpda.version>
+		<apache.httpPort>80</apache.httpPort>
+		<apache.httpsPort>443</apache.httpsPort>
+		<glassfish.home>/home/kitko/tools/glassfish4.1.1</glassfish.home>
+	</properties>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<artifactId>maven-changes-plugin</artifactId>
+				<version>2.3</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>2.6</version>
+				<reportSets>
+					<reportSet>
+						<id>parentOnly</id>
+						<inherited>false</inherited>
+						<reports>
+							<report>project-team</report>
+							<report>summary</report>
+							<report>scm</report>
+							<report>cim</report>
+							<report>index</report>
+							<report>license</report>
+						</reports>
+					</reportSet>
+					<reportSet>
+						<id>children</id>
+						<inherited>true</inherited>
+						<reports>
+							<report>index</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+		</plugins>
+	</reporting>
+
+</project>

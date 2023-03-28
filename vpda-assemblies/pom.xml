@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>org.vpda</groupId>
+		<artifactId>vpda-parent</artifactId>
+		<version>2.1-SNAPSHOT</version>
+		<relativePath>../vpda-parent/pom-vpda-parent.xml</relativePath>
+	</parent>	
+	
+	<artifactId>vpda-assemblies</artifactId>
+	<packaging>pom</packaging>
+	<name>vpda-assemblies</name>
+	
+	<description>
+		Adds common assembly descriptors shared in project
+	</description>
+	
+	<modules>
+		<module>vpda-assemblies-bin</module>
+	</modules>
+</project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

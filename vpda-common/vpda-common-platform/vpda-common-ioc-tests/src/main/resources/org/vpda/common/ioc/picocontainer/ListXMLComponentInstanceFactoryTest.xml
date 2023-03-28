@@ -1,0 +1,19 @@
+<container>
+
+<component-instance key="list1" factory="org.vpda.common.ioc.picocontainer.ListXMLComponentInstanceFactory">
+	<list itemFactory="org.vpda.common.ioc.picocontainer.ClassXMLComponentInstanceFactory">
+		<item classname="java.lang.String"/>
+		<item classname="java.lang.Long"/>
+	</list>
+</component-instance>
+
+
+<component-instance key="list2" factory="org.vpda.common.ioc.picocontainer.ListXMLComponentInstanceFactory">
+	<list>
+		<item itemClass="string" itemValue="Hello"/>
+		<item classname="java.lang.String" factory="org.vpda.common.ioc.picocontainer.ClassXMLComponentInstanceFactory"/>
+		<item itemClass="long" itemValue="14"/>
+	</list>
+</component-instance>
+
+</container>
