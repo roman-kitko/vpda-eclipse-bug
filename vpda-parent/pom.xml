@@ -13,7 +13,6 @@
 		<module>./pom-vpda-parent.xml</module>
 		<module>./pom-java-parent.xml</module>
 		<module>./pom-tests-parent.xml</module>
-		<module>../vpda-assemblies</module>
 		<module>../vpda-common</module>
 	</modules>
 </project>
