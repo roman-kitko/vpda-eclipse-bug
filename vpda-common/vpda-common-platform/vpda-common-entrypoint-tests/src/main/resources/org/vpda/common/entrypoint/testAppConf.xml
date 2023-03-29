@@ -1,8 +1,0 @@
-<config>
-	<container>
-		<component classKey="org.vpda.common.core.projectstructure.Project" classImpl="org.vpda.common.core.projectstructure.ConcreteProject">
-			<parameter type="constant" classname="string" value="VPDA_TEST"/>
-			<parameter type="component" key="allModulesContainer"/>
-		</component>
-	</container>
-</config>

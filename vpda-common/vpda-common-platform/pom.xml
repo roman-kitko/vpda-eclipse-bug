@@ -10,22 +10,14 @@
 
 	<modules>
 		<module>vpda-common-util</module>
-		<module>vpda-common-util-tests</module>
 		<module>vpda-common-ioc</module>
-		<module>vpda-common-ioc-tests</module>
 		<module>vpda-common-service</module>
-		<module>vpda-common-service-tests</module>
 		<module>vpda-common-entrypoint</module>
-		<module>vpda-common-entrypoint-tests</module>
 		<module>vpda-common-core-types</module>
 		<module>vpda-common-dto</module>
-		<module>vpda-common-dto-tests</module>
 		<module>vpda-common-command</module>
-		<module>vpda-common-command-tests</module>
 		<module>vpda-common-core-processor</module>
-		<module>vpda-common-core-processor-tests</module>
 		<module>vpda-common-context</module>
 		<module>vpda-common-core</module>
-		<module>vpda-common-core-tests</module>
 	</modules>
 </project>

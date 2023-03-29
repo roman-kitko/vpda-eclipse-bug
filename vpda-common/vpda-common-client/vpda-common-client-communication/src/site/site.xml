@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<project name="vpda-site">
-	<body>
-		<menu ref="parent" inherit="botttom"/>
-		<menu ref="modules" inherit="botttom"/>
-		<menu ref="reports" inherit="botttom"/>
-	</body>
-</project>

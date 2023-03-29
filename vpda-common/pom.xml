@@ -35,7 +35,6 @@
 		<module>pom-tests.xml</module>
 		<module>vpda-common-platform</module>
 		<module>vpda-common-runtime</module>
-		<module>vpda-common-client</module>
 	</modules>
 
 </project>
