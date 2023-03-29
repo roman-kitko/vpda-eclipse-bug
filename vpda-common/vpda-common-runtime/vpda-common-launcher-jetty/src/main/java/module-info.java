@@ -25,6 +25,7 @@ module org.vpda.common.launcher.jetty {
     
     requires transitive org.vpda.common.command;
     requires transitive org.vpda.common.entrypoint;
+    requires transitive org.vpda.common.service;
     requires transitive org.vpda.common.core;
     
     exports org.vpda.common.launcher.jetty;

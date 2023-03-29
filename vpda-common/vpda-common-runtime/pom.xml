@@ -9,7 +9,6 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>vpda-common-keys</module>
 		<module>vpda-common-launcher-jetty</module>
 		<module>vpda-common-contract</module>
 	</modules>
